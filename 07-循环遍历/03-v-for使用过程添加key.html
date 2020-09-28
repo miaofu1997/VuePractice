@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+<!-- console里面输入 app.letters.splice(2, 0, 'F') 添加F字母-->
+  <ul>
+    <li v-for="item in letters" :key="item">{{item}}</li>
+  </ul>
+</div>
+
+
+<script src="../js/vue.js"></script>
+<script>
+  const app = new Vue({
+    el: '#app',
+    data: {
+      letters: ['A', 'B', 'C', 'D', 'E']
+    }
+  })
+</script>
+
+</body>
+</html>
